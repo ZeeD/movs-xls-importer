@@ -1,8 +1,8 @@
-from typing import BinaryIO, Iterable
+from typing import BinaryIO, Iterable, Union
 
 
 class Worksheet:
-    rows: Iterable[list[str]]
+    rows: Iterable[list[Union[str, float]]]
 
 
 class Database:
